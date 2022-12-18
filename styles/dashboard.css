@@ -1,58 +1,31 @@
-header{
-    background-color: black;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-h1{
-    color: white;
-    font-family: namata medium;
-    font-size: 8vh;
-    text-align: center;
-    font-weight: 800;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.best{
-    font-weight: 100;
-    margin-top: 10px;
-    font-size: 5vh;
-    text-align: center;
-    color: white;
-    font-family: impact;
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #ffffff;
+	color: #1d1d1d;
 }
 
-.container{
-    flex-direction: column;
-}
+.container {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
 
-.modulo1 {
-    flex-direction: column;
-    width: 30px;
-    height: 30px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
 }
-
-.modulo2 {
-    flex-direction: column;
-    background-position: center center;
-    background-size: cover;
-    width: 30px;
-    height: 30px;
-    padding: 50px 0px;
-    margin: 20px;
-    border-radius: 30px;
-}
-
-.modulo3 {
-    flex-direction: column;
-    background-position: center center;
-    background-size: cover;
-    width: 30px;
-    height: 30px;
-    padding: 50px 0px;
-    margin: 20px;
-    border-radius: 30px;
+.boxes {
+    height: 250px;
+    width: 250px;
+    margin: none;
+    padding-left: 10px;
+    box-shadow: 0 0 8px grey;
+    font-family: araboto-normal;
 }
 
 @media (max-width:414px){
